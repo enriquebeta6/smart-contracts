@@ -5,8 +5,11 @@
   "description": "Toys Legend project",
   "main": "index.js",
   "scripts": {
+    "start": "hardhat node",
     "build": "hardhat compile",
+    "test": "hardhat test",
     "format": "prettier . --write",
+    "moveBlocks": "hardhat run --network localhost scripts/moveBlocks.ts",
     "lint:scripts": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:scripts:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
@@ -38,6 +41,7 @@
     "ethers": "^5.0.0",
     "hardhat": "^2.7.0",
     "hardhat-gas-reporter": "^1.0.4",
+    "mocha": "^9.2.2",
     "prettier": "^2.3.2",
     "prettier-plugin-solidity": "^1.0.0-beta.13",
     "solhint": "^3.3.6",
