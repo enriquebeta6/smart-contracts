@@ -5,6 +5,7 @@
   "description": "Toys Legend project",
   "main": "index.js",
   "scripts": {
+    "test": "hardhat test",
     "build": "hardhat compile",
     "format": "prettier . --write",
     "lint:scripts": "eslint . --ext .js,.jsx,.ts,.tsx",
